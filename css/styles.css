@@ -1,0 +1,173 @@
+/*
+Raising Superman CSS (kryptos)
+Version: 0.1.1
+Author: Michael Strobel
+Author URI: MichaelStrobel.com
+*/
+
+/*
+Master Style Guide
+--------------------------
+Color Reference:
+--------------------------
+*/
+
+/*-----------------------------------*/
+/*---------->>> RESET <<<------------*/
+/*-----------------------------------*/
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,
+code,em,img,small,fieldset,form,label,legend,table,caption,
+tbody,tfoot,thead,tr,th,td,ol,ul,li { 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	outline: 0; 
+	font-size: 100%; 
+	vertical-align: baseline; 
+	background: transparent;
+}
+
+body { 
+	line-height: 1; 
+}
+
+blockquote,q { 
+	quotes: none; 
+}
+
+blockquote:before,blockquote:after,q:before,q:after { 
+	content: '';
+	content: none 
+}
+
+table { 
+	border-collapse: collapse; 
+	border-spacing: 0; 
+}
+
+/*-----------------------------------*/
+/*----->>> TYPOGRAPHY <<<------------*/
+/*-----------------------------------*/
+h1 { font-family: 'Port Lligat Slab', serif; font-weight:normal 400; }
+h2, h3, h4, h5, h6 { font-family: 'Port Lligat Slab', serif; font-weight:normal 400; }
+p, ul, ol { font-family: 'Open Sans', sans-serif; }
+h1 a { font-family: 'Port Lligat Slab', serif; font-weight:normal 400; }
+h2 a, h3 a, h4 a, h5 a, h6 a { font-family: 'Oswald', Helvetica, Arial, serif; font-weight:normal 400; }
+a {}
+a:hover { font-family: 'Open Sans', sans-serif; }
+a:active { position:relative; top:1px; }
+
+/*-----------------------------------*/
+/*---------->>> BODY <<<-------------*/
+/*-----------------------------------*/
+body:before { 
+	content: "";
+	position: fixed; 
+	top: -10px; 
+	left: 0; 
+	width: 100%; 
+	height: 10px; 
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.5); 
+	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,.5); 
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5); 
+	z-index:100; 
+}
+
+html, body { 
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed; /*change to scroll for moble*/
+	background-clip: border-box;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url(../images/introBG.jpg);
+	background-origin: padding-box;
+	background-position: center center;
+	  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: fixed;
+}
+
+/*-----------------------------------*/
+/*--------->>> GLOBAL <<<------------*/
+/*-----------------------------------*/
+img { 
+	max-width: 100%
+}
+
+img a { 
+	border: none;
+	max-width: 100% 
+}
+
+.clear { 
+	clear: both; 
+}
+
+hr {
+	border: 0; 
+	height: 1px; 
+	background: #282f35; 
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+/* For IE 6/7 only */
+.clearfix {
+    *zoom: 1;
+}
+
+/* Global box sizing to handling fixed pixel size gutters */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*-----------------------------------*/
+/*-------->>> LAYOUT <<<-------------*/
+/*-----------------------------------*/
+.container {
+	margin: 0 auto 0 auto;
+	width: 90%;
+	max-width: 1140px;
+	height: auto;
+}
+
+/*-----------------------------------*/
+/*------>>> CUSTOM LAYOUT <<<--------*/
+/*-----------------------------------*/
+.content {
+  /*empty class used for targeting*/
+}
+
+#intro {
+	width: 100%;
+  	height: 100%;
+  	background-attachment: fixed; /*change to scroll for moble*/
+  	background-clip: border-box;
+  	/*background-color: rgba(0, 0, 0, 0);
+  	background-image: url(images/wood-bg.jpg);*/
+  	background-origin: padding-box;
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: fixed;
+}
+
+#intro .content {
+  	width: 100%;
+  	color: #fdfdfd;
+  	font-size: 1.8em;
+  	font-weight: 200;
+  	position: absolute;
+  	text-align: center;
+  	top: 25%;
+  	position: fixed;
+}
+
